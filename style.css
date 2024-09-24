@@ -1,0 +1,193 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+img{
+    width: 100%;
+}
+body{
+    background-color: #212121;
+    color: white ;
+}
+nav{
+    background-color: white;
+    color: black;
+}
+.flex{
+    display: flex;
+    align-items: center;
+    
+}
+
+/* media queries - moble fisr approch */
+
+/* moble*/
+
+@media (min-width:300px){
+    nav img{
+        height: 7vh;
+        width: auto;
+    }
+    .flex{
+        display: flex;
+        justify-content: center;
+        padding: 2vh,0;
+    }
+    .one h3,p{
+        text-align: center;
+        padding: 1.5vh 0;
+    }
+    .one h3{
+        margin-top: 5vh;
+    }
+    .one img{
+        padding-top: 3vh;
+    }
+    .two{
+        background-color: white;
+        padding: 1.5rem;
+        width: 70%;
+        margin: 5vh auto;
+        border-radius: 12px;
+
+        
+    }
+    .two label{
+        color: #212121;
+        font-size: 1.2rem;
+    }
+    .two input[type="text"]{
+        border: none;
+        outline: none;
+        padding: 0.9rem;
+        border-bottom: 1px solid #212121;
+        font-size: 1.2rem;
+        width: 90%;
+
+    }
+    .two input[type="radio"],input[type="checkbox"]{
+        margin-right: 1rem;
+        margin-top: 2vh;
+        margin-bottom: 2vh;
+    }
+    .checkboxes{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .button{
+        background-color: #212121;
+        color: white;
+        font-weight: bolder;
+        width: 90%;
+        border: none;
+        outline: none;
+        padding: 1rem;
+        border-radius: 12px;
+    }
+    .equipment_list h3{
+        text-align: center;
+    }
+    .cards{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .card{
+        display: flex;
+        background-color: white;
+        border-radius: 12px;
+        margin: 1.5rem;
+        align-items: center;
+    }
+    .final h2{
+        text-align: center;
+    }
+    .equipment img{
+        background-color: white;
+        display: flex;
+        align-items: center;
+        margin-top: 1rem;
+        
+    }
+    .membership img{
+        display: flex;
+        align-items: center;
+        margin-top: 1.5rem;  
+    }
+
+}
+/* tablet or tab for meadia queris*/
+
+@media (min-width:700px) {
+    .flex h3{
+        font-size: 1.6rem;
+    }
+    .one h3,p{
+        font-size: 1.6rem;
+    }
+    .equipment_list h3{
+        font-size: 1.6rem;
+    }
+    .cards{
+        padding: 5.4rem;
+    }
+    .final{
+        display: flex;
+        margin-bottom: 2rem;
+    }
+
+    
+}
+
+/* desktop media queris */
+@media (min-width:1000px){
+    .flex{
+        display: flex;
+        justify-content: start;
+        margin-left: 2rem;
+    }
+    .one h3,p{
+        display: none;
+    }
+    
+    .hero{
+        width: 90%;
+        display: flex;
+        flex-direction: row-reverse;
+        width: 0 auto;
+        justify-content: space-between;
+    }
+    .two{
+        width: 30%; 
+    }
+    .button{
+        margin-top: 1rem;
+        margin-left: 1rem;
+    }
+    .equipment_list h3{
+        font-size: 1.5rem;
+        margin-top: 2rem;
+    }
+    .cards{
+        grid-template-columns: repeat(4, 1fr);
+        margin: 3.5rem;
+        margin-top: 0.1rem; 
+    }
+    .final h2{
+        font-size: 1.5rem;
+    }
+    .final{
+        display: flex;
+        justify-content: center;
+    }
+    .segmenta{
+         width: 30%;
+    } 
+    .segmentb{
+        width: 30%;
+    }   
+    
+
+    
+}
+
